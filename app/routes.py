@@ -32,7 +32,6 @@ async def get_currency_chart(
         days: int = 30,
         db: AsyncSession = Depends(get_async_session)
 ):
-    """Генерирует аналитический график курса валюты из PostgreSQL в Docker"""
     chart_buffer = await currency_service.generate_chart(db, code, days)
 
     if chart_buffer is None:

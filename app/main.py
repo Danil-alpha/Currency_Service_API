@@ -2,9 +2,9 @@ from fastapi import FastAPI
 from app.routes import router as currency_router
 
 app = FastAPI(
-    title="Универсальный Финансовый API Сервис",
+    title="Финансовый API Сервис",
     description="Бэкенд для получения курсов валют, кэширования в PostgreSQL и аналитики",
-    version="1.0.0"
+    version="1.0"
 )
 
 
